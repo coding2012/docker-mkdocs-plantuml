@@ -27,3 +27,17 @@ Build your docs
 If you want to generate them in other place mount `/docs/site` as a volume:
 
     docker run -it --rm -v `pwd`:/docs -v $HOME/Desktop/site:/docs/site coding2012/mkdocs build
+
+PlantUML Usage
+--------------
+
+Inside your project file 
+```
+site_name: My Site Name
+markdown_extensions:
+    - plantuml: 
+        outpath: "images"
+```
+
+See the following site for uml usage:
+https://github.com/mikitex70/plantuml-markdown
